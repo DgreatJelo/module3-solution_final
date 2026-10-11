@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Food, LLC — a thoughtfully prepared menu of comforting favorites.">
+  <title>Our Menu | Food, LLC</title>
+  <!-- Bootstrap 3 grid, navbar, and responsive utilities are included locally. -->
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- The navbar is deliberately NOT fixed: it scrolls with the page. -->
+  <header class="navbar navbar-default site-navbar" role="banner">
+    <div class="container-fluid navbar-inner">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#top" aria-label="Food, LLC — back to top">Food, LLC</a>
+        <!-- Bootstrap's mobile-only toggle button: hidden at sm and md sizes. -->
+        <button class="navbar-toggle collapsed visible-xs" type="button"
+                data-toggle="collapse" data-target="#mobile-navigation"
+                aria-controls="mobile-navigation" aria-expanded="false"
+                aria-label="Toggle menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="mobile-navigation" class="collapse navbar-collapse" aria-label="Mobile food categories">
+        <ul class="nav navbar-nav visible-xs-block">
+          <li><a href="#chicken">Chicken</a></li>
+          <li><a href="#beef">Beef</a></li>
+          <li><a href="#sushi">Sushi</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="container-fluid page-intro">
+      <p class="intro-eyebrow text-center">FRESHLY MADE · ALWAYS SHARED</p>
+      <h1 class="text-center">Our Menu</h1>
+      <p class="intro-description text-center">Three favorites. One table. Good food made for the moments that matter.</p>
+    </div>
+
+    <div class="container-fluid menu-container">
+      <div class="row">
+        <!-- REQUIRED: exactly one tall, full-width Bootstrap grid section. -->
+        <section class="col-xs-12 menu-panel" aria-label="Food, LLC menu">
+          <div class="panel-topline">
+            <span>THE FOOD, LLC COLLECTION</span>
+            <span>EST. WITH GOOD TASTE</span>
+          </div>
+
+          <div class="featured-story" id="chicken">
+            <div class="featured-copy">
+              <p class="item-number">01 <span class="number-line"></span> KITCHEN FAVORITE</p>
+              <h2>Chicken<span class="heading-dot">.</span></h2>
+              <p class="story-lead">Comfort, served with a little extra care.</p>
+              <p>Some dishes just feel like home. Our chicken selection is all about the simple things done beautifully: golden finishes, fragrant herbs, bright citrus, and the kind of slow, considered preparation that makes every bite worth savoring.</p>
+              <p>Whether you're gathering with friends or treating yourself to a quiet lunch, this is the food we keep coming back to. Familiar, satisfying, and made to be enjoyed without a rush.</p>
+              <div class="detail-line"><span>THE MOOD</span><strong>Warm · Savory · Satisfying</strong></div>
+              <div class="detail-line"><span>BEST ENJOYED</span><strong>With good company</strong></div>
+            </div>
+            <div class="type-art" aria-hidden="true">
+              <div class="art-circle circle-back"></div>
+              <div class="art-circle circle-front"></div>
+              <span class="art-caption art-caption-top">MADE WITH</span>
+              <span class="art-word">care<span>.</span></span>
+              <span class="art-caption art-caption-bottom">SERVED WITH JOY / 01</span>
+            </div>
+          </div>
+
+          <div class="menu-divider" aria-hidden="true"><span>MORE TO LOVE</span></div>
+
+          <div class="mini-story" id="beef">
+            <span class="mini-index">02 / THE CLASSIC</span>
+            <div>
+              <h3>Beef</h3>
+              <p>Rich, hearty flavors meet balanced seasoning and a thoughtful finish. An everyday favorite that makes an ordinary meal feel a little more special.</p>
+            </div>
+            <span class="mini-symbol" aria-hidden="true">✳</span>
+          </div>
+          <div class="mini-story mini-story-last" id="sushi">
+            <span class="mini-index">03 / THE FRESH PICK</span>
+            <div>
+              <h3>Sushi</h3>
+              <p>Clean flavors, beautiful balance, and a fresh perspective in every bite. Light enough to keep things easy, memorable enough to come back for.</p>
+            </div>
+            <span class="mini-symbol" aria-hidden="true">✳</span>
+          </div>
+          <div class="panel-bottomline">GOOD FOOD. GOOD PEOPLE. GOOD DAYS.</div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="vendor/jquery.min.js"></script>
+  <script src="vendor/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
